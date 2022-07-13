@@ -12,6 +12,7 @@ div.container {
   display: grid;
   grid-template-rows: 1fr 8fr .3fr;
   grid-template-columns: 1fr 5fr;
+  max-height: 120vh;
 }
 
 .profile-pic {
@@ -206,6 +207,16 @@ p.anncement-text {
 /* FOOTER */
 
 div.footer {
-  background-color: #f1f5f9;
+  background-color: #1e293b;
   grid-area: 3 / 1 / 4 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 7vh;
+}
+
+div.footer > a,
+div.footer > a:visited {
+  color: white;
 }
