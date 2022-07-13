@@ -16,7 +16,13 @@ div.container {
 
 .profile-pic {
   height: 60px;
+  border: 1px solid #334155;
   border-radius: 20px;
+}
+
+.profile-pic-l {
+  height: 90px;
+  border-radius: 30px;
 }
 
 nav.sidebar {
@@ -59,6 +65,59 @@ li.sidebar-link > a:visited {
 
 div.upper-bar {
   background-color: #f1f5f9;
+  --upper-bar-padding: 5%;
+}
+
+div.upper-bar > div.search {
+  padding: 20px var(--upper-bar-padding);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+div.upper-bar > div.search > input.search-bar {
+  height: 30px;
+  margin-right: 45px;
+  border: 2px solid #94a3b8;
+  border-radius: 12px;
+  flex: 1;
+}
+
+div.upper-bar > div.user-display {
+  padding: 0 var(--upper-bar-padding) 14px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.upper-bar > div.user-display > div.greeting-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+div.greeting-container > div.greeting {
+  font-size: 0.8rem;
+}
+
+div.greeting-container > div.greeting > div.username {
+  margin-top: 3px;
+  font-size: 1.2rem;
+}
+
+div.user-display > div.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+div.user-display > div.button-container > button.action-button {
+  width: 4.5rem;
+  background-color: #334155;
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
 }
 
 div.content {
