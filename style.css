@@ -111,7 +111,7 @@ div.user-display > div.button-container {
 }
 
 div.user-display > div.button-container > button.action-button {
-  width: 4.5rem;
+  width: 5rem;
   background-color: #334155;
   color: white;
   font-size: 0.8rem;
@@ -122,6 +122,47 @@ div.user-display > div.button-container > button.action-button {
 
 div.content {
   background-color: #cbd5e1;
+  padding: 30px;
+}
+
+div.cards {
+  margin-top: 25px;
+}
+
+div.card {
+  background-color: #f1f5f9;
+  height: 250px;
+  width: 500px;
+  border-radius: 25px;
+  display: flex;
+}
+
+div.card > div.color-side {
+  background-color: #fbbf24;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 100%;
+  min-width: 5%;
+  max-width: 5%;
+}
+
+div.card > div.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3.card-title {
+  margin-bottom: 4px;
+}
+
+div.card-buttons {
+  text-align: right;
+}
+
+svg.card-button {
+  margin-left: 10px;
 }
 
 div.footer {
