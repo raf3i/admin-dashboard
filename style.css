@@ -1,6 +1,6 @@
 :root {
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 * {
@@ -120,9 +120,13 @@ div.user-display > div.button-container > button.action-button {
   border-radius: 30px;
 }
 
+/* CONTENT */
+
 div.content {
   background-color: #cbd5e1;
   padding: 30px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
 
 div.cards {
@@ -132,7 +136,7 @@ div.cards {
 div.card {
   background-color: #f1f5f9;
   height: 250px;
-  width: 500px;
+  width: 450px;
   border-radius: 25px;
   display: flex;
 }
@@ -153,8 +157,12 @@ div.card > div.card-content {
   justify-content: space-between;
 }
 
-h3.card-title {
+h4.card-title {
   margin-bottom: 4px;
+}
+
+p.card-text {
+  font-size: 0.9rem;
 }
 
 div.card-buttons {
@@ -164,6 +172,35 @@ div.card-buttons {
 svg.card-button {
   margin-left: 10px;
 }
+
+/* ANNOUNCEMENT */
+
+h3.anncements-title {
+  margin-bottom: 25px;
+}
+
+h4.anncement-title {
+  margin-bottom: 12px;
+}
+
+div.anncements {
+  background-color: #f1f5f9;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+div.anncements-content > div.anncement-2 {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+p.anncement-text {
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
 
 div.footer {
   background-color: #f1f5f9;
