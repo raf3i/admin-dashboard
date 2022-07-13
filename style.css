@@ -127,16 +127,19 @@ div.content {
   padding: 30px;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  gap: 12px;
 }
 
 div.cards {
   margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 12px;
 }
 
 div.card {
   background-color: #f1f5f9;
   height: 250px;
-  width: 450px;
   border-radius: 25px;
   display: flex;
 }
